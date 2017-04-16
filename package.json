@@ -49,5 +49,8 @@
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
   },
-  "repository": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyentk90/angular2webpack2.git"
+  }
 }
