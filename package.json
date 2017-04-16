@@ -1,0 +1,53 @@
+{
+  "name": "angular2-webpack2",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "start": "webpack-dev-server --inline --progress --port 8080",
+    "server": "http-server dist --cors",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build:dev": "rimraf dist && webpack --config config/webpack.dev.js --progress --profile",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "Nguyen Tran <hello@nguyentr.com> (https://nguyentr.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "core-js": "^2.4.1",
+    "jquery": "^3.1.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/jquery": "^2.0.34",
+    "@types/node": "^6.0.54",
+    "angular-router-loader": "^0.5.0",
+    "angular2-template-loader": "^0.6.0",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "babel-core": "^6.24.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "http-server": "^0.9.0",
+    "node-sass": "^4.1.1",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "repository": {}
+}
