@@ -7,6 +7,5 @@ export class HomeService {
     userName: string;
     constructor(appConfig: AppConfig, userService: UserService) {
         this.userName = userService.userName;
-        console.log(appConfig.API_URL);
     }
 }
